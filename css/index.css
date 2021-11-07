@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.aling-self-center{
+    align-self: center;
+}
+body{
+    background-color: black;
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('../img/fondo.gif');
+    background-repeat:repeat;
+    background-size: 60% 50%;
+}
+.border-primary {
+    border-color: #80ff00 !important;
+    box-shadow: 0px 0px 5px 0px #80ff00;
+}
+.btn-primary,.form-check-input:checked {
+    color: #000;
+    background-color: rgb(128, 255, 0);
+    border-color: rgb(133, 255, 0);
+}
+.btn-primary:active,.btn-primary:focus,.btn-primary:hover{
+    color: #000;
+    background-color: rgb(98, 215, 0);
+    border-color: rgb(123, 245, 0);
+    box-shadow: 0 0 0 0.15rem rgb(120 255 0 / 50%);
+}
+.btn-primary.disabled, .btn-primary:disabled {
+    color: #fff;
+    background-color: #000;
+    border-color: rgb(120 255 0);
+}
+.btn-primary:active:focus{
+    background-color: rgb(70, 180, 0);
+    box-shadow: 0 0 0 0.25rem rgb(120 255 0 / 70%);
+}
+button{
+    color:black;
+}
+.color-texto{
+    color: rgb(120, 255, 0);
+}
+#mainContainer,#questionsContainer,#divPagination{
+    max-width: 600px;
+}
+.contenedor-pregunta{
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: #000d;
+    animation: backInDown;
+    animation-duration: 0.5s;
+}
+#divPagination{
+    margin-bottom: 2rem;
+}
+.flex{
+    display: flex;
+}
+.form-control,.form-select,.form-inline{
+    color: rgb(128, 255, 0);
+    background-color: #000;
+    border-color: rgb(128, 255, 0);
+    outline: 0;
+}
+.form-inline{
+    width:3.5rem ;
+    text-align: center;
+}
+.form-control:focus,.form-select:focus {
+    color: rgb(128, 255, 0);
+    background-color: #000;
+    border-color: rgb(128, 255, 0);
+    outline: 0;
+    box-shadow: 0 0 0 0.15rem rgb(128, 255, 0);
+}
+.form-check-input:focus{
+    box-shadow: 0 0 0 0.15rem rgb(120 255 0 / 50%);
+}
+.grow-1{
+    flex-grow: 1;
+}
+h1{
+    font-family:'Ephesis', cursive;
+    color: rgb(128, 255, 0);
+    font-size: 4rem;
+}
+h2,p{
+    font-family: "Consolas";
+    color: rgb(128, 255, 0);
+}
+h3{
+    font-size: 1rem;
+}
+.inline-flex{
+    display:inline-flex;
+    justify-content: center;
+}
+label{
+    color: rgb(128, 255, 0);
+    font-family:'Consolas';
+}
+.header-shadow{
+    text-shadow: 2px 3px 4px #80ff00;
+}
+.swal2-show{
+    border-color: rgb(128, 255, 0);
+    outline: 0;
+    box-shadow: 0 0 3px 4px rgb(128, 255, 0);
+}
+.texto-azul{
+    color: blue;
+}
+.texto-rojo{
+    color:red;
+}
+#headerText{
+    margin-top: 1rem;
+}
+@media screen and (orientation: landscape){
+    body{
+        height: 100vh;
+        background-size: 30% 50%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    body{
+        height: 100vh;
+        background-size: 20% 50%;
+    }   
+}

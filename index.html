@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuestados</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="container">
+    <header>
+        <div id="headerText" class="animate__animated animate__slow animate__fadeIn">
+            <h1 class="text-center header-shadow">&lt;Encuestados&gt;</h1>
+        </div>
+    </header>
+    <div id="mainContainer" class="container">
+        <form id="mainForm" action="#" method="POST">
+            <div class="animate__animated animate__delay-1s animate__fadeInDown form-floating m-2">
+                <select class="form-select" id="floatingLanguage" aria-label="Floating label select example">
+                    <option value="">Elige una opcion...</option>
+                    <option value="html">Html</option>
+                    <option value="css">Css</option>
+                    <option value="js">Javascript</option>
+                </select>
+                <label for="floatingLanguage">Lenguaje</label>
+            </div>
+            <div class="animate__animated animate__delay-1s animate__fadeInDown form-floating m-2">
+                <select class="form-select" id="floatingLevel" aria-label="Floating label select example">
+                    <option value=''>Elige una opcion...</option>
+                    <option value="0" disabled>Inicial</option>
+                    <option value="1">Principiante</option>
+                    <option value="2" disabled>Intermedio</option>
+                    <option value="3" disabled>Avanzado</option>
+                </select>
+                <label for="floatingLevel">Dificultad</label>
+            </div>
+            <div class="animate__animated animate__delay-1s animate__fadeInDown  form-floating m-2">
+                <select class="form-select" id="floatingQuestions" aria-label="Floating label select example">
+                    <option value=''>Elige una opcion...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <label for="floatingQuestions">Cantidad de preguntas</label>
+            </div>
+            <div class="d-grid m-2 animate__animated animate__delay-1s animate__fadeInDown ">
+                <input id="btnInitQuestions" class="btn btn-primary" type="submit">
+            </div>
+        </form>
+    </div>
+    <div id="questionsContainer" class="container">
+    </div>
+    <div id="divPagination" class="container"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script src="js/questions.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
